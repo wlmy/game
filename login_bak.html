@@ -1,0 +1,242 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="UTF-8">
+<title>海风教育</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="css\bootstrap.min.css?v=1470201292" rel="stylesheet">
+<link href="css\maker.css?v=1470201292" rel="stylesheet">
+<link href="css\css.css?v=1470201292" rel="stylesheet">
+<meta name="keywords" content="海风教育">
+<link rel="shortcut icon" href="Public\Home\img\favicon.ico">
+<link rel="bookmark" href="Public\Home\img\favicon.ico">
+<meta name="baidu-site-verification" content="lreluGaXsv">
+<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+<script src="/Public/static/bootstrap/js/html5shiv.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+<script type="text/javascript" src="/Public/static/jquery-1.10.2.min.js"></script>
+<![endif]-->
+<!--[if gte IE 9]><!-->
+<script type="text/javascript" src="Public\static\jquery-2.0.3.min.js"></script>
+<script type="text/javascript" src="Public\static\bs3\js\bootstrap.min.js"></script>
+</head>
+<body>
+  <!-- 头部 -->
+  <!-- 导航条
+#333333 bg颜色
+================================================== -->
+<header class="navtop">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false">
+        <span class="sr-only">导航</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <!-- <a href="../" class="navbar-brand"><img src="/Public/Home/images/logo.png" width=150></a> -->     
+      <div class="logo-nav">
+       <img src="images/logo.png" alt="" />
+      </div>
+    </div>
+    <nav id="bs-navbar" class="collapse navbar-collapse">
+      <ul class="topnav">
+        <li>
+          <a href="index.html">首页</a>
+        </li>
+        <li>
+          <a href="aboutus.html">关于我们</a>
+        </li>
+        <li>
+          <a href="news.html">公司动态</a>
+        </li>
+        <li>
+          <a href="products.html">旗下产品</a>
+        </li>
+        <li class="active">
+          <a href="positions.html">加入倍果</a>
+        </li>
+        <li>
+          <a href="contact.html">联系我们</a>
+        </li>
+        <li><a href="charge.html">账户充值</a></li>
+      </ul>
+      <div class="navright"> 
+        <a href="login.html">登录</a>
+        <a href="register.html" class="register-btn">注册</a>   
+      </div>
+    </nav>
+
+  </div>
+ 
+</header>
+	<!-- /头部 -->	
+	<!-- 主体 -->	       
+<div class="routea">
+  <div class="login-bg">
+    <div class="container ">
+      <div class="login-title">用户登录</div>
+      </div>
+    </div>
+  </div>
+  <div class="login-box">
+    <form class="login-form" action="login.html" method="post">
+      <div class="login-form-main"> 
+        <div class="form-group">      
+          <label  for="inputEmail">手机号</label>
+          <input type="text" id="inputEmail" class="form-control" placeholder="请输入手机号" ajaxurl="/member/checkUserNameUnique.html" errormsg="请填写1-9" nullmsg="请输入手机号" datatype="*1-9" value="" name="phonename">
+          <div class="controls ">
+            <div class="controls Validform_checktip text-warning">      
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label  for="inputPassword">密码</label>    
+            <input type="password" id="inputPassword" class="form-control" placeholder="请输入密码" errormsg="密码为6-20位" nullmsg="请填写密码" datatype="*6-20" name="password">   
+          <div class="controls ">
+            <div class="controls Validform_checktip text-warning">      
+            </div>
+          </div>
+        </div>
+        <div class="row form-group">
+          <div class="col-md-6 "> <img src="images/forget.png" alt="" / style="margin-right: 5px;"><label>
+          <a href="register.html" class="forget-btn">忘记密码</a></label></div>
+          <div class="col-md-6 text-right"><label><a href="register.html" class="register-btn">注册</a> </label></div>
+        </div>
+      </div>     
+      <div class="login-btn-group">
+        <button type="submit" class="btn login-btn">登 陆</button>
+      </div>
+    </form>
+  </div>
+<script type="text/javascript">
+    $(function(){
+        $(window).resize(function(){
+            $("#main-container").css("min-height", $(window).height() - 343);
+        }).resize();
+    })
+</script>
+	<!-- /主体 -->
+	<!-- 底部 -->
+<footer>
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <img src="images/logo.png" alt="" />
+          <p class="footer-min-title">
+            ©2010-2017hfjy.com All Rights Reserved <br />   上海风创信息咨询有限公司 沪ICP备<br />11030714号-8
+          </p>
+        </div>
+        <div class="col-md-8">
+          <div class="col-lg-12 " style="text-align: left;vertical-align: top;">
+            <div class="col-lg-3 " style="text-align: left;">
+              <a href="aboutus.html" class="foota">关于我们</a>
+              <ul class="navlist">
+                <li><a href="aboutus.html" class="footb">我们的boss</a></li>
+                <li><a href="aboutus.html" class="footb">我们的牛人</a></li>
+                <li><a href="aboutus.html" class="footb">我们的团队</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-3 " style="text-align: left;">
+              <a href="news.html" class="foota">公司动态</a>
+              <ul class="navlist">
+                <li><a href="news.html" class="footb">行业资讯</a></li>
+                <li><a href="news.html" class="footb">游戏动态</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-3 " style="text-align: left;">
+              <a href="positions.html" class="foota">加入风创</a>
+              <ul class="navlist">
+                <li><a href="positions.html" class="footb">技术大神</a></li>
+                <li><a href="positions.html" class="footb">策划牛人</a></li>
+                <li><a href="positions.html" class="footb">美术设计</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-3 " style="text-align: left;">
+              <a href="contact.html" class="foota">联系我们</a>
+              <ul class="navlist">
+                <li><a href="contact.html" class="footb">联系地址</a></li>
+                <li><a href="contact.html" class="footb">联系电话</a></li>
+              </ul>
+            </div>
+         
+          </div>
+          <div class="col-lg-9 footer-min-title">
+            本网络游戏适合年满12周岁(含)以上的用户使用；抵制不良游戏，拒绝盗版游戏。注意自我保护，谨防受骗上当。适度游戏益脑，沉迷游戏伤身。合理安排时间，享受健康生活。
+          </div>
+        </div>
+        <div class="col-md-1">
+           <img src="images/bitmap@2x.png" alt="" />
+        </div>
+      </div>   
+    </div>
+  </div>
+</footer>
+<script type="text/javascript">
+(function(){
+	var ThinkPHP = window.Think = {
+		"ROOT"   : "", //当前网站地址
+		"APP"    : "/index.php?s=", //当前项目地址
+		"PUBLIC" : "/Public", //项目公共目录地址
+		"DEEP"   : "/", //PATHINFO分割符
+		"MODEL"  : ["3", "", "html"],
+		"VAR"    : ["m", "c", "a"]
+	}
+})();
+</script>
+
+	<script type="text/javascript">
+
+    	$(document)
+	    	.ajaxStart(function(){
+	    		$("button:submit").addClass("log-in").attr("disabled", true);
+	    	})
+	    	.ajaxStop(function(){
+	    		$("button:submit").removeClass("log-in").attr("disabled", false);
+	    	});
+
+
+    	$("form").submit(function(){
+    		var self = $(this);
+        var url = self.attr("action");
+        var query = self.serialize();
+
+    		$.post(url, query, success, "json");
+    		return false;
+
+    		function success(data){
+    			if(data.status){
+            // console.log('登陆成功');
+    				window.location.href = data.url;
+    			} else {
+    				self.find(".Validform_checktip").text(data.info);
+    				//刷新验证码
+    				$(".reloadverify").click();
+    			}
+    		}
+    	});
+
+		$(function(){
+			var verifyimg = $(".verifyimg").attr("src");
+            $(".reloadverify").click(function(){
+                if( verifyimg.indexOf('?')>0){
+                    $(".verifyimg").attr("src", verifyimg+'&random='+Math.random());
+                }else{
+                    $(".verifyimg").attr("src", verifyimg.replace(/\?.*$/,'')+'?'+Math.random());
+                }
+            });
+		});
+	</script>
+ <!-- 用于加载js代码 -->
+<!-- 页面footer钩子，一般用于加载插件JS文件和JS代码 -->
+<div class="hidden"><!-- 用于加载统计代码等隐藏元素 -->
+	
+</div>
+<!-- /底部 -->
+  
+</body>
+</html>

@@ -1,0 +1,61 @@
+﻿@charset "utf-8";
+
+body{
+	font-family: "microsoft yahei","微软雅黑";font-size:14px;
+}
+/*background-color: rgba(0,0,0,0.75);*/
+.navtop{background-color: #333;
+color:#fafafa;
+filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#BF000000,endColorstr=#BF000000);
+height:96px;
+ }
+.navtop a{color:#fff;}
+.topnav{
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+	float:left;
+	margin:0;
+	/*display: inline;*/
+font-size: 16px;
+}
+.topnav>ul{
+	margin-left: 20px;
+	position: relative;
+	/*display: block;*/
+	list-style: none;
+	    display: list-item;
+}
+.topnav>li{
+	cursor:pointer;
+	display: inline;
+}
+
+.topnav>li>a{
+	z-index: 999;
+	cursor: pointer;
+	padding-top: 35px;
+	padding-bottom: 20px;
+	width: 110px;
+	height: 117px;
+	position: relative;
+	display: inline-block;
+	list-style: none;
+	margin:auto;
+    text-align: center;
+    text-decoration: none;
+	/*index_05.png*/
+	
+/*background-attachment: fixed;*/
+}
+
+
+
+.topnav>li>a:hover{
+	/*background-color: #c41214;*/
+		background: url(../images/index_06.png) no-repeat bottom center;
+
+}
+.topnav>li>a{
+
+}

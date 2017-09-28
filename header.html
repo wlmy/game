@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>海风教育</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link href="css\bootstrap.min.css?v=1470201292" rel="stylesheet">
+    <link href="css\maker.css?v=1470201292" rel="stylesheet">
+    <link href="css\css.css?v=1470201292" rel="stylesheet">
+    <meta name="keywords" content="海风教育">
+    <link rel="shortcut icon" href="Public\Home\img\favicon.ico">
+    <link rel="bookmark" href="Public\Home\img\favicon.ico">
+    <meta name="baidu-site-verification" content="lreluGaXsv">
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="/Public/static/bootstrap/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="/Public/static/jquery-1.10.2.min.js"></script>
+    <![endif]-->
+    <!--[if gte IE 9]><!-->
+    <script type="text/javascript" src="Public\static\jquery-2.0.3.min.js"></script>
+    <script type="text/javascript" src="Public\static\bs3\js\bootstrap.min.js"></script>
+</head>
+<body>
+<!-- 头部 -->
+<!-- 导航条
+#333333 bg颜色
+================================================== -->
+<header class="navtop">
+    <div class="container">
+        <div class="navbar-header">
+            <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false">
+                <span class="sr-only">导航</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!-- <a href="../" class="navbar-brand"><img src="/Public/Home/images/logo.png" width=150></a> -->
+            <div class="logo-nav">
+                <img src="images/logo.png" alt="" />
+            </div>
+        </div>
+        <nav id="bs-navbar" class="collapse navbar-collapse" style="width: 1300px">
+            <ul class="topnav">
+                <li>
+                    <a href="index.php">首页</a>
+                </li>
+                <li>
+                    <a href="aboutus.html">关于我们</a>
+                </li>
+                <li>
+                    <a href="news.html">公司动态</a>
+                </li>
+                <li>
+                    <a href="products.html">旗下产品</a>
+                </li>
+                <li class="active">
+                    <a href="positions.html">加入倍果</a>
+                </li>
+                <li>
+                    <a href="contact.html">联系我们</a>
+                </li>
+                <li><a href="charge.html">账户充值</a></li>
+            </ul>
+            <div class="navright">
+                <?php
+                require "core.php";
+                $core = new core();
+                $login_info = $core->get_login_info();
+                ?>
+                <?php if($login_info['status'] == 0){?>
+                <a href="login.php">登录</a>
+                <?php }else{?>
+                <a href="/" style="color: green"><?php echo $login_info['name'];?></a>
+                <a href="/account.php?act=login_out" style="color: green">退出</a>
+                <?php }?>
+                <a href="register.php" class="register-btn">注册</a>
+            </div>
+        </nav>
+
+    </div>
+
+</header>
+<!-- /头部 -->
