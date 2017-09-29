@@ -1,6 +1,4 @@
 ﻿<?php include "header.html";?>
-
-<!-- /头部 -->
 <!-- 主体 -->
 <div class="routea">
     <div class="login-bg">
@@ -47,22 +45,6 @@
     })
 </script>
 <!-- /主体 -->
-<!-- 底部 -->
-<?php include "footer.html";?>
-
-
-<script type="text/javascript">
-    (function(){
-        var ThinkPHP = window.Think = {
-            "ROOT"   : "", //当前网站地址
-            "APP"    : "/index.php?s=", //当前项目地址
-            "PUBLIC" : "/Public", //项目公共目录地址
-            "DEEP"   : "/", //PATHINFO分割符
-            "MODEL"  : ["3", "", "html"],
-            "VAR"    : ["m", "c", "a"]
-        }
-    })();
-</script>
 
 <script type="text/javascript">
 
@@ -105,12 +87,5 @@
         });
     });
 </script>
-<!-- 用于加载js代码 -->
-<!-- 页面footer钩子，一般用于加载插件JS文件和JS代码 -->
-<div class="hidden"><!-- 用于加载统计代码等隐藏元素 -->
 
-</div>
-<!-- /底部 -->
-
-</body>
-</html>
+<?php include "footer.html";?>

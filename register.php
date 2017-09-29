@@ -1,5 +1,5 @@
 ﻿<?php include "header.html";?>
-  <!-- /头部 -->  
+  <!-- /头部 -->
   <!-- 主体 -->        
 <div class="routea register-routea">
   <div class="register-bg">
@@ -59,7 +59,7 @@
         </div>
         <div class=" form-group">
           <label>
-          <input type="checkbox" value="agree" name="agreement" id="agree" checked=""> 我已阅读并接受 <a href="aggreement.html" target="_blank"> 《用户协议》</a>
+          <input type="checkbox" value="agree" name="agreement" id="agree" checked=""> 我已阅读并接受 <a href="#" target="_blank"> 《用户协议》</a>
           </label>
         </div>
          <div class=" form-group text-right">
@@ -93,9 +93,6 @@
   </div>
 </div>
 
-
-<block name="side"> 
-
 <script type="text/javascript">
     $(function(){
         $(window).resize(function(){
@@ -103,71 +100,47 @@
         }).resize();
     })
 </script>
-  <!-- /主体 -->
-  <!-- /主体 -->
-  <!-- 底部 -->
-  <?php include "footer.html";?>
-</block>
+
 <script type="text/javascript">
-(function(){
-  var ThinkPHP = window.Think = {
-    "ROOT"   : "", //当前网站地址
-    "APP"    : "/index.php?s=", //当前项目地址
-    "PUBLIC" : "/Public", //项目公共目录地址
-    "DEEP"   : "/", //PATHINFO分割符
-    "MODEL"  : ["3", "", "html"],
-    "VAR"    : ["m", "c", "a"]
-  }
-})();
-</script>
 
-  <script type="text/javascript">
-
-      $(document)
-        .ajaxStart(function(){
-          $("button:submit").addClass("log-in").attr("disabled", true);
-        })
-        .ajaxStop(function(){
-          $("button:submit").removeClass("log-in").attr("disabled", false);
-        });
+  $(document)
+    .ajaxStart(function(){
+      $("button:submit").addClass("log-in").attr("disabled", true);
+    })
+    .ajaxStop(function(){
+      $("button:submit").removeClass("log-in").attr("disabled", false);
+    });
 
 
-      $("form").submit(function(){
-        var self = $(this);
-        var url = self.attr("action");
-        var query = self.serialize();
+  $("form").submit(function(){
+    var self = $(this);
+    var url = self.attr("action");
+    var query = self.serialize();
 
-        $.post(url, query,  function callback(data){
-           var res = jQuery.parseJSON(data);
-            if(parseInt(res.code) === 0){
-                alert("注册成功");
-                window.location.href = res.data.url;
-            } else {
-                alert(res.message);
-                //self.find(".Validform_checktip").text(res.message);
+    $.post(url, query,  function callback(data){
+       var res = jQuery.parseJSON(data);
+        if(parseInt(res.code) === 0){
+            alert("注册成功");
+            window.location.href = res.data.url;
+        } else {
+            alert(res.message);
+            //self.find(".Validform_checktip").text(res.message);
+        }
+    });
+
+    return false;
+  });
+
+$(function(){
+  var verifyimg = $(".verifyimg").attr("src");
+        $(".reloadverify").click(function(){
+            if( verifyimg.indexOf('?')>0){
+                $(".verifyimg").attr("src", verifyimg+'&random='+Math.random());
+            }else{
+                $(".verifyimg").attr("src", verifyimg.replace(/\?.*$/,'')+'?'+Math.random());
             }
         });
+});
+</script>
 
-        return false;
-      });
-
-    $(function(){
-      var verifyimg = $(".verifyimg").attr("src");
-            $(".reloadverify").click(function(){
-                if( verifyimg.indexOf('?')>0){
-                    $(".verifyimg").attr("src", verifyimg+'&random='+Math.random());
-                }else{
-                    $(".verifyimg").attr("src", verifyimg.replace(/\?.*$/,'')+'?'+Math.random());
-                }
-            });
-    });
-  </script>
- <!-- 用于加载js代码 -->
-<!-- 页面footer钩子，一般用于加载插件JS文件和JS代码 -->
-<div class="hidden"><!-- 用于加载统计代码等隐藏元素 -->
-  
-</div>
-<!-- /底部 -->
-  
-</body>
-</html>
+<?php include "footer.html";?>
