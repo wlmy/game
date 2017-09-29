@@ -22,7 +22,7 @@
           </div>
           <div class="col-lg-12 text-right"><a href="game1.html" class="more-btn">查看全部<img src="images/arrow@2x.png" alt=""></a></div>
         </div>      
-        <a href="#" class="download-btn">下载</a>
+        <a href="/download.php?game_id=1" class="download-btn">下载</a>
       </div>
     </div>
     <div class="col-lg-4">
@@ -37,7 +37,7 @@
           </div>
           <div class="col-lg-12 text-right"><a href="game2.html" class="more-btn">查看全部<img src="images/arrow@2x.png" alt=""></a></div>
         </div> 
-        <a href="#" class="download-btn">下载</a>      
+        <a href="/download.php?game_id=2" class="download-btn">下载</a>
       </div>
     </div>
     <div class="col-lg-4">
@@ -52,7 +52,7 @@
           </div>
           <div class="col-lg-12 text-right"><a href="game3.html" class="more-btn">查看全部<img src="images/arrow@2x.png" alt=""></a></div>
         </div>
-         <a href="#" class="download-btn">下载</a>    
+         <a href="/download.php?game_id=3" class="download-btn">下载</a>
       </div>
     </div>
   </div>

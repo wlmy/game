@@ -75,7 +75,7 @@
                 <div class="form-group">
                     <label class="col-lg-2 control-label">充值账号:</label>
                     <div class="col-lg-6" style="width:500px;">
-                        <input type="text" class="form-control">
+                        <input type="text" class="form-control" id="charge_account" value="">
                     </div>
                     <div class="col-lg-2 darkred remark">
                         *必填
@@ -84,7 +84,7 @@
                 <div class="form-group">
                     <label class="col-lg-2 control-label">确认账号:</label>
                     <div class="col-lg-6" style="width:500px;">
-                        <input type="text" class="form-control">
+                        <input type="text" class="form-control" id="charge_confirm_account" value="">
                     </div>
                     <div class="col-lg-2 darkred remark">
                         *必填
@@ -138,7 +138,7 @@
                 <div class="form-group ">
                     <div class="col-lg-offset-2 col-lg-10">
                         <label class="radio-inline">
-                            <input type="radio" name="inlineRadioOptions" value="ccb">
+                            <input type="radio" name="inlineRadioOptions" value="ccb" checked>
                             <img class="bankitem ccb">
                         </label>
                         <label class="radio-inline">
@@ -301,9 +301,26 @@
     setMenu('recharge','desc');
     /*]]>*/
 </script>
+
+<script>
+    $(function () {
+       $('.btn-default').click(function () {
+           var account = $('#charge_account').val();
+           var confirm_account = $('#charge_confirm_account').val();
+           if(!account){
+               alert('充值账号不能为空');
+               return false;
+           }
+           if(!confirm_account){
+               alert('确认账号不能为空');
+               return false;
+           }
+           alert('充值申请成功！');
+       });
+    });
+</script>
 <div style="z-index: 9999; position: absolute; left: 667px; top: 295.5px; display: none;" id="ajaxLoading">
     <img alt="" src="recharge_js_img\ajax-loader.gif">
 </div>
-
 
 <?php include "footer.html";?>

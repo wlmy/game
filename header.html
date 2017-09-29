@@ -44,25 +44,28 @@
         </div>
         <nav id="bs-navbar" class="collapse navbar-collapse" style="width: 1300px">
             <ul class="topnav">
-                <li class="active">
+                <?php $url = $_SERVER['REQUEST_URI']; ?>
+                <li class="<?php if(strpos($url,'index')){?>active<?php }?>">
                     <a href="index.php">首页</a>
                 </li>
-                <li>
+                <li class="<?php if(strpos($url,'aboutus')){?>active<?php }?>">
                     <a href="aboutus.php">关于我们</a>
                 </li>
-                <li>
+                <li class="<?php if(strpos($url,'news')){?>active<?php }?>">
                     <a href="news.php">公司动态</a>
                 </li>
-                <li>
+                <li class="<?php if(strpos($url,'products')){?>active<?php }?>">
                     <a href="products.php">旗下产品</a>
                 </li>
-                <li >
+                <li class="<?php if(strpos($url,'positions')){?>active<?php }?>">
                     <a href="positions.php">加入风创</a>
                 </li>
-                <li>
+                <li class="<?php if(strpos($url,'contact')){?>active<?php }?>">
                     <a href="contact.php">联系我们</a>
                 </li>
-                <li><a href="charge.php">账户充值</a></li>
+                <li class="<?php if(strpos($url,'charge')){?>active<?php }?>">
+                    <a href="charge.php">账户充值</a>
+                </li>
             </ul>
             <div class="navright">
                 <?php

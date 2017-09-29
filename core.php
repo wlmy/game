@@ -28,13 +28,13 @@ class core
     {
         $saveAsFileName = '游戏包.apk';
         if ($game_id == 1) {
-            $saveAsFileName = '快快鱼.apk';
+            $saveAsFileName = '千炮捕鱼联网版.apk';
         }
         if ($game_id == 2) {
-            $saveAsFileName = '捕鱼机.apk';
+            $saveAsFileName = '超次元坦克.apk';
         }
         if ($game_id == 3) {
-            $saveAsFileName = '王者荣耀.apk';
+            $saveAsFileName = '登山赛车2.apk';
         }
 
         // 清空缓冲区并关闭输出缓冲

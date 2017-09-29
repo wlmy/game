@@ -45,7 +45,6 @@ class Account
             return $this->print_to('1', '登录失败！');
         }
 
-
     }
 
     /**
