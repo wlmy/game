@@ -1,0 +1,11 @@
+stages:
+  - deploy
+
+deploy-dev:
+  stage: deploy
+  only:
+    - master
+  script:
+  - echo "推送到测试节点 dev@101.37.252.53:/opt/case/hfpai/"
+
+  - rsync -avurz --delete -e 'ssh -o StrictHostKeyChecking=no -i /home/gitlab-runner/.ssh/spub_key -p 16300' --exclude-from=exclude.txt ./ dev@101.37.252.53:/opt/case/hfpai/

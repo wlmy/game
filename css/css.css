@@ -439,7 +439,7 @@ input,select,textarea,label,li,ul,button,a:active {
 }
 
 .foota {
-	color: #d7d6d6;
+	color: #d7d6d6 !important;
 }
 
 .foota:hover {
@@ -448,7 +448,7 @@ input,select,textarea,label,li,ul,button,a:active {
 }
 
 .footb {
-	color: #b3b3b3;
+	color: #b3b3b3 !important;
 }
 
 .footb:hover {

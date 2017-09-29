@@ -1,28 +1,12 @@
 ﻿<?php include "header.html";?>
     <link rel="icon" type="image/icon" href="http://f.hdurl.me/web2/images/favicon.ico">
     <link rel="shortcut icon" type="image/icon" href="http://f.hdurl.me/web2/images/favicon.ico">
-    <link rel="stylesheet" type="text/css" href="recharge_js_img\bootstrap.min.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="recharge_js_img\buttons.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="recharge_js_img\font-awesome.min.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="recharge_js_img\style.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="recharge_js_img\select2.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="css\bootstrap.min.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="css\buttons.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="css\font-awesome.min.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="css\style.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="css\select2.css" media="screen">
 
-
-    <script src="recharge_js_img\hm.js"></script>
-    <script type="text/javascript" defer="" async="" src="recharge_js_img\piwik.js"></script>
-    <script type="text/javascript">
-        /*<![CDATA[*/
-        var _baseUrl = "";
-        var _browserUrl = "/browser/support";
-        var _staticBaseUrl = "http://f.hdurl.me/web2";
-        var _fileBaseUrl = "http://f.hdurl.me/";
-        var allowHornUpdate = true;
-        var _accountid = 0;
-        var _token = "2dd0473bf43eb4dfc375c70e1c85600c58cbe74ad2bdc65371eaca6382ac8293";
-        var _timestamp = 1469614020;
-        var error = []
-        /*]]>*/
-    </script>
 
 <div class="mainbody">
     <div class="faq ng-scope" style="padding:20px" ng-controller="RechargeCtl">
@@ -245,63 +229,6 @@
     <a id="return-top" style="left: 1184.5px; display: none;"></a>
 </div>
 
-<div style="display:none">
-    <!-- Piwik -->
-    <script type="text/javascript">
-        var _paq = _paq || [];
-        _paq.push(["trackPageView"]);
-        _paq.push(["enableLinkTracking"]);
-        (function() {
-            var u=(("https:" == document.location.protocol) ? "https" : "http") + "://pv.hoodinn.com/";
-            _paq.push(["setTrackerUrl", u+"piwik.php"]);
-            _paq.push(["setSiteId", "9"]);
-            var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
-            g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
-        })();
-    </script>
-    <!-- End Piwik Code -->
-    <script>
-        var _hmt = _hmt || [];
-        (function() {
-            var hm = document.createElement("script");
-            hm.src = "//hm.baidu.com/hm.js?c436235cecba0530ee2ddb15203bde26";
-            var s = document.getElementsByTagName("script")[0];
-            s.parentNode.insertBefore(hm, s);
-        })();
-    </script>
-</div>
-<script type="text/javascript" src="recharge_js_img\underscore-min.js"></script>
-<script type="text/javascript" src="recharge_js_img\jquery.min.js"></script>
-<script type="text/javascript" src="recharge_js_img\jquery.center.js"></script>
-<script type="text/javascript" src="recharge_js_img\jquery.browser.min.js"></script>
-<script type="text/javascript" src="recharge_js_img\checkbrowser.js"></script>
-<script type="text/javascript" src="recharge_js_img\bootstrap.min.js"></script>
-<script type="text/javascript" src="recharge_js_img\modal.js"></script>
-<script type="text/javascript" src="recharge_js_img\buttons.js"></script>
-<script type="text/javascript" src="recharge_js_img\select2.min.js"></script>
-<script type="text/javascript" src="recharge_js_img\select2_locale_zh-CN.js"></script>
-<script type="text/javascript" src="recharge_js_img\jquery.placeholder.js"></script>
-<script type="text/javascript" src="recharge_js_img\angular.js"></script>
-<script type="text/javascript" src="recharge_js_img\angular-sanitize.min.js"></script>
-<script type="text/javascript" src="recharge_js_img\angular-resource.js"></script>
-<script type="text/javascript" src="recharge_js_img\ui-bootstrap.js"></script>
-<script type="text/javascript" src="recharge_js_img\angular-utility.js"></script>
-<script type="text/javascript" src="recharge_js_img\angular-bootstrap-modal.js"></script>
-<script type="text/javascript" src="recharge_js_img\stapp.js"></script>
-<script type="text/javascript" src="recharge_js_img\body.js"></script>
-<script type="text/javascript" src="recharge_js_img\user.js"></script>
-<script type="text/javascript" src="recharge_js_img\utility.js"></script>
-<script type="text/javascript" src="recharge_js_img\strongwebsite.js"></script>
-<script type="text/javascript" src="recharge_js_img\search.js"></script>
-<script type="text/javascript" src="recharge_js_img\jquery.countdown.js"></script>
-<script type="text/javascript" src="recharge_js_img\jquery.qrcode.min.js"></script>
-<script type="text/javascript" src="recharge_js_img\recharge.js"></script>
-<script type="text/javascript">
-    /*<![CDATA[*/
-    setMenu('recharge','desc');
-    /*]]>*/
-</script>
-
 <script>
     $(function () {
        $('.btn-default').click(function () {
@@ -319,8 +246,5 @@
        });
     });
 </script>
-<div style="z-index: 9999; position: absolute; left: 667px; top: 295.5px; display: none;" id="ajaxLoading">
-    <img alt="" src="recharge_js_img\ajax-loader.gif">
-</div>
 
 <?php include "footer.html";?>

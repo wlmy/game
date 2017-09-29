@@ -9,7 +9,7 @@
       <li class="active">超次元坦克</li>
     </ol>
     <div class="col-lg-3">     
-      <img src="images/game_01.png" class=""><br><br>
+      <img src="images/image_face3.png" class=""><br><br>
       <img src="images/star.png" alt="" style="margin-left: 24px">
     </div>
     <div class="col-lg-9 game-box-title">
